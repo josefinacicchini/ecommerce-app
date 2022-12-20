@@ -1,0 +1,16 @@
+.cart-widget {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+    padding: 0 1vw;
+    font-family: 'roboto';
+    font-size: 1.2vw;
+    color: whitesmoke;
+    /* color: #423f32; */
+}
+
+p:hover {
+    color: #8e8d8d
+}
