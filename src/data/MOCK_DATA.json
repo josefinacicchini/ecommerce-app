@@ -1,0 +1,182 @@
+[
+    {
+        "id":1,
+        "name":"Correa",
+        "description":"Correa de 2,5 cm de ancho con costuras reforzadas, mosquetón de metal. Disponible en 2, 5 y 10 mts. de largo. ",
+        "price":2000,
+        "category":"Paseo",
+        "image":"../../images/correa.jpg",
+        "stock":500
+    },
+    {
+        "id":2,
+        "name":"Arnés",
+        "description":"Arnés ajustable con pechera acolchada. Diferentes tamaños y colores.",
+        "price":6500,
+        "category":"Paseo",
+        "image":"../../images/arnes.jpg",
+        "stock":200
+    },
+    {
+        "id":3,
+        "name":"Collar",
+        "description":"Collar regulable para perros, de nylon con broche de cierre rápido. Disponible en varios colores.",
+        "price":1000,
+        "category":"Paseo",
+        "image":"../../images/collar.jpg",
+        "stock":350
+    },
+    {
+        "id":4,
+        "name":"Bolsas sanitarias",
+        "description":"Bolsas sanitarias, pack por 3 rollos",
+        "price":700,
+        "category":"Paseo",
+        "image":"../../images/bolsa-sanitaria.jpg",
+        "stock":500
+    }, 
+    {
+        "id":5,
+        "name":"Porta bolsas",
+        "description":"Porta rollo de bolsas sanitarias. Disponible en varios colores",
+        "price":1500,
+        "category":"Paseo",
+        "image":"../../images/porta-bolsas.jpg",
+        "stock":80
+    }, 
+    {
+        "id":6,
+        "name":"Pelota porta alimento",
+        "description":"Pelota de goma porta alimento. Disponible en varios colores.",
+        "price":1000,
+        "category":"Juego",
+        "image":"../../images/pelota.jpg",
+        "stock":200
+    }, 
+    {
+        "id":7,
+        "name":"Jugete interactivo",
+        "description":"Jugete interactivo porta alimento",
+        "price":3000,
+        "category":"Juego",
+        "image":"../../images/juguete-interactivo.jpg",
+        "stock":40
+    }, 
+    {
+        "id":8,
+        "name":"Mordillo soga",
+        "description":"Mordillo de soga con dos nudos.",
+        "price":500,
+        "category":"Juego",
+        "image":"../../images/soga.jpg",
+        "stock":100
+    }, 
+    {
+        "id":9,
+        "name":"Juguete porta alimento",
+        "description":"Juguete porta alimento Kong.",
+        "price":6000,
+        "category":"Juego",
+        "image":"../../images/kong.jpg",
+        "stock":50
+    }, 
+    {
+        "id":10,
+        "name":"Plato Acero Inoxidable",
+        "description":"Plato comedero de acero inoxidable con borde de goma antideslizante.",
+        "price":1200,
+        "category":"Alimentación",
+        "image":"../../images/plato-metal.jpg",
+        "stock":90
+    }, 
+    {
+        "id":11,
+        "name":"Plato portátil de silicona",
+        "description":"Plato portátil plegable de silicona. Disponible en varios colores.",
+        "price":1050,
+        "category":"Alimentación",
+        "image":"../../images/plato-portatil.jpg",
+        "stock":200
+    }, 
+    {
+        "id":12,
+        "name":"Botella con dispenser",
+        "description":"Botella con dispenser portátil para paseo.",
+        "price":3000,
+        "category":"Alimentación",
+        "image":"../../images/bebedero-portatil.jpg",
+        "stock":50
+    }, 
+    {
+        "id":13,
+        "name":"Contenedor de alimento",
+        "description":"Contenedor de plástico resistente, hermético para alimento balanceado. Capacidad 6 kg.",
+        "price":5000,
+        "category":"Alimentación",
+        "image":"../../images/contenedor-alimento.jpg",
+        "stock":30
+    }, 
+    {
+        "id":14,
+        "name":"Cucha nido",
+        "description":"Cucha tipo nido varios tamaños.",
+        "price":4500,
+        "category":"Descanso",
+        "image":"../../images/cucha-nido.jpg",
+        "stock":20
+    }, 
+    {
+        "id":15,
+        "name":"Colchon / colchoneta",
+        "description":"Cucha colchoneta varios tamaños.",
+        "price":6000,
+        "category":"Descanso",
+        "image":"../../images/cucha-colchon.jpg",
+        "stock":30
+    }, 
+    {
+        "id":16,
+        "name":"Mat descanso",
+        "description":"Mat de tela para descanso",
+        "price":3500,
+        "category":"Descanso",
+        "image":"../../images/mat.jpg",
+        "stock":60
+    }, 
+    {
+        "id":17,
+        "name":"Cepillo cardina",
+        "description":"Cepillo con cerdas de alambre con mango de plástico ergonómico. ",
+        "price":1500,
+        "category":"Higiene",
+        "image":"../../images/cardina.jpg",
+        "stock":25
+    }, 
+    {
+        "id":18,
+        "name":"Paños sanitarios",
+        "description":"Paños sanitarios de entrenamiento para perros por 20 unidades.",
+        "price":800,
+        "category":"Higiene",
+        "image":"../../images/panos-sanitarios.jpg",
+        "stock": 150
+    }, 
+    {
+        "id":19,
+        "name":"Shampoo para perros",
+        "description":"Shampoo natural para perros por 450 ml.",
+        "price":1500,
+        "category":"Higiene",
+        "image":"../../images/shampoo-natural.jpg",
+        "stock":100
+    }, 
+    {
+        "id":20,
+        "name":"Shampoo sólido para perros",
+        "description":"Shampoo sólido para perros por tres unidades",
+        "price":900,
+        "category":"Higiene",
+        "image":"../../images/shampoo-solido.jpg",
+        "stock":150
+    }
+]
