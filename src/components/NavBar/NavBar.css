@@ -1,10 +1,39 @@
 nav {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    background-color: #DBDBDD;
+    height: 8vh;
+}
+
+.brand {
+    display: flex;
+    justify-content: flex-start;
+    color: #8e8d8d;
+    margin-left: 2rem;
+    gap: 1rem;
+    
+}
+
+.brand img {
+    width: 50px;
+    height: 50px;
+}
+
+.brand p {
+    font-family: 'Patrick Hand', bold;
+    font-size: 2rem;
+    color: lightseagreen;
+    align-self: center;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     gap: 2.5vw;
-    background-color: #DBDBDD
+
 }
 
 a {
