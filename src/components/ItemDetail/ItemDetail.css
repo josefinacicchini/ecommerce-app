@@ -1,0 +1,9 @@
+.item-detail{
+    display: flex;
+    flex-flow: column wrap;
+    margin: 3rem;
+}
+
+img {
+    align-self: center;
+}
