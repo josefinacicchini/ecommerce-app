@@ -1,9 +1,38 @@
 .item-detail{
     display: flex;
     flex-flow: column wrap;
+    align-items: center;
     margin: 3rem;
+    padding: 3rem 8rem;
+    border-radius: 0.2rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: white;
 }
 
 img {
     align-self: center;
+}
+
+.description {
+    text-align: justify;
+}
+
+.return-button {
+    margin: 1rem;
+    border-radius: 0.2rem;
+    display:inline-block;
+    padding:0.5em 3em;
+    border:0.16em solid #FFFFFF;
+    box-sizing: border-box;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-family:'Roboto',sans-serif;
+    font-weight:400;
+    color:#FFFFFF;
+    text-align:center;
+    background-color: #34b0b0;
+}
+.return-button:hover {
+    color:#DDDDDD;
+    border-color:#DDDDDD;
 }
