@@ -1,21 +1,62 @@
+import './NavBar.css';
 import CartWidget from "../CartWidget/CartWidget";
-import './NavBar.css'
-import image from '../../img/brand-logo.png'
+import Tooltip from "@mui/material/Tooltip";
+import image from '../../img/brand-logo-white.png';
+import { Link } from "react-router-dom";
+import { IoPaw } from "react-icons/io5";
+import { BiTennisBall, BiBone } from "react-icons/bi";
+import { RiZzzFill } from "react-icons/ri";
+import { GiSoap } from "react-icons/gi";
 
 const NavBar = () => {
     return(
-        <nav>
+        <header className="header-container">
             <div className="brand">
-                <img src={image} alt="brand logo"/>
-                <p>PAWSOME</p>
+                <img src={image} alt="brand logo" />
+                <Link className="brand-name" to={'/'}>Pawsome</Link>
             </div>
-            <div className="links-container">
-                <a href="">HOME</a>
-                <a href="">SHOP</a>
-                <a href="">CONTACT</a>
+       
+            <nav className="nav-container">
+                <div className="links-container">
+                    
+                    <Tooltip title="Paseo">
+                        <Link className="nav-link" to={'/productos/Paseo'}>
+                            <IoPaw/>
+                        </Link>
+                    </Tooltip>
+
+                    <Tooltip title="Alimentación">
+                        <Link className="nav-link" to={'/productos/Alimentación'}>
+                            <BiBone/>
+                        </Link>
+                    </Tooltip>
+
+                    <Tooltip title="Descanso">
+                        <Link className="nav-link" to={'/productos/Descanso'}>
+                            <RiZzzFill/>
+                        </Link>
+                    </Tooltip>
+
+                    <Tooltip title="Higiene">
+                        <Link className="nav-link" to={'/productos/Higiene'}>
+                            <GiSoap/>
+                        </Link>
+                    </Tooltip>
+
+                    <Tooltip title="Juego">
+                        <Link title="juego" className="nav-link" to={'/productos/Juego'}>
+                            <BiTennisBall/>
+                        </Link>
+                    </Tooltip>
+
+                    {/* <Link className="nav-link" to={'/'}>HOME</Link> */}
+                    {/* <Link className="nav-link" to={'/contact'}>CONTACT</Link> */}
+
+
+                </div>
                 <CartWidget />
-            </div>
-        </nav>
+            </nav>
+        </header>
     )
 }
 

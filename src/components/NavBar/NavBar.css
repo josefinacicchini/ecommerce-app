@@ -1,49 +1,62 @@
-nav {
+.header-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #DBDBDD;
-    height: 8vh;
+    /* background-color: #DBDBDD; */
+    background-color: #34b0b0;
+    height: fit-content;
 }
 
 .brand {
     display: flex;
     justify-content: flex-start;
-    color: #8e8d8d;
+    align-items: center;
     margin-left: 2rem;
     gap: 1rem;
     
 }
 
 .brand img {
-    width: 50px;
-    height: 50px;
+    max-width: 4vw;
+    max-height: 4vw;
+    background-color: #34b0b0;
+    margin: 0.5rem;
 }
 
-.brand p {
-    font-family: 'Patrick Hand', bold;
-    font-size: 2rem;
-    color: lightseagreen;
-    align-self: center;
+.brand-name {
+    font-family: 'Patrick hand';
+    font-size: 3vw;
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 0;
+    
 }
 
-.links-container {
+.nav-container {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
     align-items: center;
     gap: 2.5vw;
 
 }
-
-a {
-    text-decoration: none;
-    font-family: 'roboto';
-    font-size: 1.1vw;
-    color: white;
+.links-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2vw;
 
 }
+.nav-link {
+    text-decoration: none;
+    /* font-family: 'Patrick hand'; */
+    font-family: "Roboto";
+    font-weight: light;
+    font-size: 1.8vw;
+    color: white;
+}
 
-a:hover {
-    color: #8e8d8d
+.nav-link:hover {
+    /* color: #8e8d8d */
+    color: #8aaeb5;
 }
