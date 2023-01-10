@@ -21,7 +21,7 @@ const ItemCount = ({item}) => {
                 <button onClick={quitar}>
                     -
                 </button>
-                <p>{count}</p>
+                <p className="counter-display">{count}</p>
                 <button onClick={agregar}>
                     +
                 </button>
