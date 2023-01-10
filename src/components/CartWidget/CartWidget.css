@@ -6,11 +6,16 @@
     gap: 0.5vw;
     padding: 0 1vw;
     font-family: 'roboto';
-    font-size: 1.2vw;
+    font-size: 2vw;
+    font-weight: bold;
     color: whitesmoke;
     /* color: #423f32; */
 }
-
-p:hover {
-    color: #8e8d8d
+.cart-counter {
+    font-size: 2vw;
+    color: whitesmoke;
+    margin: 0;
+}
+.cart-counter:hover {
+    color: #8AAEB5;
 }
