@@ -4,4 +4,7 @@
     justify-content: space-around;
     gap: 1rem;
     background-color: whitesmoke;
+    /* background-color: #8AAEB5; */
+    padding: 1.5rem 3rem;
+    border-radius: 0.3rem;
 }
