@@ -1,0 +1,39 @@
+.login-screen {
+    width: 100%;
+    height: 100vh;
+    /* background-color: #78ccb0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form-container {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    margin: 0.5vh;
+}
+
+.login-form-button {
+    margin: 0.5vh;
+
+}
+
+.error {
+    font-style: 'roboto';
+    font-size: 15px;
+    color: darkred;
+    margin: 1vh;
+    padding: 0;
+}
