@@ -1,3 +1,8 @@
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .header-container {
     display: flex;
     flex-direction: row;
@@ -59,4 +64,26 @@
 .nav-link:hover {
     /* color: #8e8d8d */
     color: #8aaeb5;
+}
+
+.login-logout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 1vw;
+    font-family: 'roboto', sans-serif;
+    color: #34b0b0;
+}
+
+.logout-button {
+    border-radius: 0.2rem;
+    padding: 0.5em;
+    border: 0.16em solid #FFFFFF;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:400;
+    color:#FFFFFF;
+    text-align:center;
+    background-color: #34b0b0;
 }
