@@ -1,4 +1,5 @@
 import './RegisterScreen.css'
+import logo from '../../img/brand-logo.png'
 import { useState, useContext } from 'react'
 import { LoginContext } from '../../context/LoginContext'
 import { Link } from 'react-router-dom'
@@ -24,16 +25,21 @@ const RegisterScreen = () => {
     }
 
     return (
-        <div className='login-screen'>
-            <div className='login-form-container'>
-                <h2>Register</h2>
-                <form className='login-form' onSubmit={handleSubmit}>
+        <div className='register-screen'>
+            <div className='register-form-container'>
+                <div className='register-header'>
+                    <img className='brand-logo' src={logo} alt="brand logo" />
+                    <h3 className='pawsome-welcome'>Bienvenido a la tienda de Pawsome!</h3>
+                </div>
+                <p>Ingresa tus datos para registrarte:</p>
+                <form className='register-form' onSubmit={handleSubmit}>
                     <input 
                         className='form-input' 
                         type={'email'} 
                         value={values.email} 
                         onChange={handleInputChange}
-                        name='email'  
+                        name='email'
+                        Placeholder='Email'  
                     />
                     <input 
                         className='form-input' 
@@ -41,13 +47,14 @@ const RegisterScreen = () => {
                         value={values.password} 
                         onChange={handleInputChange}
                         name='password'
+                        Placeholder='Password'
                     />
-                    <button className='login-form-button'>Registrarme</button>
+                    <button className='register-form-button'>Registrarme</button>
 
                     { user.error && <p className='error'>{user.error}</p>}
 
                 </form>
-                <Link to='/login'>Ya estoy registrado</Link>
+                <Link className='link-to-login' to='/login'>Ya estoy registrado</Link>
             </div>
         </div>
     )

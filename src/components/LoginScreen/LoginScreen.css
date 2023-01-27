@@ -12,25 +12,16 @@
     display: flex;
     flex-flow: column wrap;
     margin: 3rem;
-    padding: 3rem 8rem;
+    padding: 3rem;
     border-radius: 0.2rem;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
-}
-.link {
-    margin: 1rem 2rem;
-    text-decoration: none;
-}
-
-a:visited {
-    color: #298787;
 }
 
 .login-header{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    color: #298787;
     align-items: center;
     justify-content: center;
 
@@ -43,10 +34,15 @@ a:visited {
     transform: rotateZ(340deg);
 }
 
+.pawsome-welcome{
+    color: #298787;
+}
+
 .login-screen p {
     font-family: 'Roboto', sans-serif;
     font-size: medium;
     text-align: center;
+    color: #423f32;
 
 }
 
@@ -89,3 +85,20 @@ a:visited {
     padding: 0;
 }
 
+.register-message {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: medium;
+    font-weight: 400;
+    text-align: left;
+    color: #423f32;
+} 
+
+.link {
+    margin-top: 0;
+    text-decoration: none;
+}
+
+.link:visited {
+    color: #298787;
+}
