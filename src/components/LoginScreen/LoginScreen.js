@@ -1,7 +1,9 @@
 import './LoginScreen.css'
+import logo from '../../img/brand-logo.png'
 import { useState, useContext } from 'react'
 import { LoginContext } from '../../context/LoginContext'
 import { Link } from 'react-router-dom'
+
 
 const LoginScreen = () => {
     const { login, user } = useContext(LoginContext)
@@ -26,14 +28,19 @@ const LoginScreen = () => {
     return (
         <div className='login-screen'>
             <div className='login-form-container'>
-                <h2>Login</h2>
+                <div className='login-header'>
+                    <img className='brand-logo' src={logo} alt="brand logo" />
+                    <h3>Bienvenido a la tienda de Pawsome!</h3>
+                </div>
+                <p>Ingresa tus datos o registrate, si es la primera vez, para comenzar a comprar.</p>
                 <form className='login-form' onSubmit={handleSubmit}>
                     <input 
                         className='form-input' 
                         type={'email'} 
                         value={values.email} 
                         onChange={handleInputChange}
-                        name='email'  
+                        name='email'
+                        placeholder='Email'
                     />
                     <input 
                         className='form-input' 
@@ -41,13 +48,14 @@ const LoginScreen = () => {
                         value={values.password} 
                         onChange={handleInputChange}
                         name='password'
+                        placeholder='Password'
                     />
                     <button className='login-form-button'>Ingresar</button>
 
                     { user.error && <p className='error'>{user.error}</p>}
 
                 </form>
-                <Link to='/register'>Registrarme</Link>
+                <Link className='link' to='/register'>Registrarme</Link>
             </div>
         </div>
     )
