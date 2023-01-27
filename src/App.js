@@ -1,27 +1,19 @@
-import NavBar from "./components/NavBar/NavBar";
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
-import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Error404 from "./components/Error404/Error404";
+
+import { CartProvider } from "./context/CartContext";
+import { LoginProvider } from "./context/LoginContext";
+import AppRouter from "./router/AppRouter";
+
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        
-        <NavBar />
-        
-        <Routes>
-          <Route path="/" element={ <ItemListContainer /> } />
-          <Route path="/detail/:itemId" element={<ItemDetailContainer />} />
-          <Route path="/productos/:categoryId" element={ <ItemListContainer /> }/>
-          <Route path="*" element={ <Error404/> }/>
+    <LoginProvider>
+      <CartProvider>
+        {/* <div className="App"> */}
+          <AppRouter/>
+        {/* </div> */}
+      </CartProvider>
+    </LoginProvider>
 
-        </Routes>
-        
-      </BrowserRouter>
-
-    </div>
   );
 }
 
