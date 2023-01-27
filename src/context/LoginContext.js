@@ -1,20 +1,6 @@
-import { createContext, useContext, useState } from "react";
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth";
+import { createContext, useContext, useEffect, useState } from "react";
+import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { auth } from '../firebase/config'
-// const MOCK_USERS = [
-//     {
-//         email:'profe@coder.com',
-//         password:'admin'
-//     },
-//     {
-//         email:'tutor@coder.com',
-//         password:'coder'
-//     },
-//     {
-//         email:'john@coder.com',
-//         password:'coder'
-//     }
-// ]
 
 
 export const LoginContext = createContext()
@@ -33,13 +19,13 @@ export const LoginProvider = ({children}) => {
 
     const login = (values) => {
         signInWithEmailAndPassword(auth, values.email, values.password)
-        .then((userCredential)=> {
-            setUser({
-                email: userCredential.user.email,
-                logged: true,
-                error: null
-            })
-        })
+        // .then((userCredential)=> {
+        //     setUser({
+        //         email: userCredential.user.email,
+        //         logged: true,
+        //         error: null
+        //     })
+        // })
         .catch((error)=> {
             setUser({
                 email: null,
@@ -48,30 +34,6 @@ export const LoginProvider = ({children}) => {
             })
         })
 
-        
-        // const match = MOCK_USERS.find(user => user.email === values.email)
-    
-        // if(!match) {
-        //     setUser({
-        //         email: null,
-        //         logged:false,
-        //         error: 'No se encuentra ese usuario'
-        //     })
-        // }
-
-        // if(match.password === values.password) {
-        //     setUser({
-        //         email: match.email,
-        //         logged: true,
-        //         error: null
-        //     })
-        // } else {
-        //     setUser({
-        //         email: null,
-        //         logged:false,
-        //         error: 'Password inválido'
-        //     })
-        // }
     }
 
     const logout = () => {
@@ -88,13 +50,13 @@ export const LoginProvider = ({children}) => {
 
     const register = (values) => {
         createUserWithEmailAndPassword(auth, values.email, values.password)
-            .then((userCredential)=> {
-                setUser({
-                    email: userCredential.user.email,
-                    logged: true,
-                    error: null
-                })
-            })
+            // .then((userCredential)=> {
+            //     setUser({
+            //         email: userCredential.user.email,
+            //         logged: true,
+            //         error: null
+            //     })
+            // })
             .catch((error)=> {
                 setUser({
                     email: null,
@@ -104,6 +66,21 @@ export const LoginProvider = ({children}) => {
             })
 
     }
+
+    useEffect(()=>{
+        onAuthStateChanged(auth, (user)=> {
+            if (user) {
+                setUser({
+                    email: user.email,
+                    logged: true,
+                    error: null
+                })
+            } else {
+               logout()
+            }
+        })
+
+    }, [])
 
     return (
         <LoginContext.Provider value={{user, login, logout, register}}>
