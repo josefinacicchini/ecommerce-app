@@ -13,7 +13,7 @@ const AppRouter = () => {
                 ? <PrivateRoutes />
                 : <PublicRoutes />
             }
-            
+
         </BrowserRouter>
     )
 }
