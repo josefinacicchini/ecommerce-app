@@ -1,0 +1,19 @@
+.items-container {
+  padding-bottom: 2vh;
+  border-bottom: solid #e5e7e6;
+}
+.item-name {
+  font-size: 1.2rem;
+}
+
+.item-cant {
+  font-size: 0.8rem;
+}
+
+.item-price {
+  font-size: 0.8rem;
+}
+
+.total-price {
+  font-size: 1.2rem;
+}
