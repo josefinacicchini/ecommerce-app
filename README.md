@@ -17,7 +17,7 @@ It uses Firebase Authentication and Database services.
 
 ## Deployment
 
-
+pawsomestore.netlify.app
 
 ## Authors
 
