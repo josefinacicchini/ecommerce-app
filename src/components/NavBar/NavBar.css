@@ -1,89 +1,83 @@
 .navbar-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .header-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* background-color: #DBDBDD; */
-    background-color: #34b0b0;
-    height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #34b0b0;
+  height: fit-content;
 }
 
 .brand {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 2rem;
-    gap: 1rem;
-    
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 2rem;
+  gap: 1rem;
 }
 
 .brand img {
-    max-width: 4vw;
-    max-height: 4vw;
-    background-color: #34b0b0;
-    margin: 0.5rem;
+  max-width: 4vw;
+  max-height: 4vw;
+  background-color: #34b0b0;
+  margin: 0.5rem;
 }
 
 .brand-name {
-    font-family: 'Patrick hand';
-    font-size: 3vw;
-    text-decoration: none;
-    color: whitesmoke;
-    margin: 0;
-    
+  font-family: "Patrick hand";
+  font-size: 3vw;
+  text-decoration: none;
+  color: whitesmoke;
+  margin: 0;
 }
 
 .nav-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2.5vw;
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2vw;
 }
-.links-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 2vw;
-
+.links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2vw;
+  padding-right: 1.5vw;
 }
 .nav-link {
-    text-decoration: none;
-    /* font-family: 'Patrick hand'; */
-    font-family: "Roboto";
-    font-weight: light;
-    font-size: 1.8vw;
-    color: white;
+  text-decoration: none;
+  font-family: "Roboto";
+  font-weight: light;
+  font-size: 1.8vw;
+  color: white;
 }
 
 .nav-link:hover {
-    /* color: #8e8d8d */
-    color: #8aaeb5;
+  color: #8aaeb5;
 }
 
 .login-logout-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin: 1vw;
-    font-family: 'roboto', sans-serif;
-    color: #34b0b0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 1vw;
+  font-family: "roboto", sans-serif;
+  color: #34b0b0;
 }
 
 .logout-button {
-    border-radius: 0.2rem;
-    padding: 0.5em;
-    border: 0.16em solid #FFFFFF;
-    box-sizing: border-box;
-    text-decoration:none;
-    font-family:'Roboto',sans-serif;
-    font-weight:400;
-    color:#FFFFFF;
-    text-align:center;
-    background-color: #34b0b0;
+  border-radius: 0.2rem;
+  padding: 0.5em;
+  border: 0.16em solid #ffffff;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  background-color: #34b0b0;
 }

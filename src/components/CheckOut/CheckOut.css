@@ -1,0 +1,93 @@
+.checkout-container {
+  display: flex;
+  flex-flow: column wrap;
+  font-family: "Roboto", sans-serif;
+  color: #423f32;
+  margin: 3rem;
+  padding: 3rem 8rem;
+  border-radius: 0.2rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  width: inherit;
+}
+
+.checkout-title {
+  border-bottom: solid #e5e7e6;
+  color: #34b0b0;
+  padding-bottom: 2vh;
+}
+
+.checkout-form-container {
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  font-family: "Roboto", sans-serif;
+  color: #423f32;
+  padding-top: 2vh;
+  gap: 1rem;
+  width: 30vw;
+}
+
+.form-title {
+  margin-bottom: 1vh;
+  color: #34b0b0;
+  font-size: 1.2rem;
+}
+
+.checkout-form-button {
+  margin: 0rem;
+  border-radius: 0.2rem;
+  display: inline-block;
+  padding: 0.5em 3em;
+  border: 0.16em solid #ffffff;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: small;
+  color: #ffffff;
+  text-align: center;
+  background-color: #34b0b0;
+  width: 10vw;
+}
+.checkout-form-button:hover {
+  color: #dddddd;
+  border-color: #dddddd;
+}
+
+.checkout-message {
+  display: flex;
+  flex-flow: column wrap;
+  font-family: "Roboto", sans-serif;
+  color: #423f32;
+  margin: 3rem;
+  padding: 3rem 8rem;
+  border-radius: 0.2rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  width: inherit;
+}
+
+.checkout-return-button {
+  margin: 0rem;
+  border-radius: 0.2rem;
+  display: inline-block;
+  padding: 0.5em 3em;
+  border: 0.16em solid #ffffff;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: small;
+  color: #ffffff;
+  text-align: center;
+  background-color: #34b0b0;
+  width: 10vw;
+}
+
+.checkout-return-button:hover {
+  color: #dddddd;
+  border-color: #dddddd;
+}

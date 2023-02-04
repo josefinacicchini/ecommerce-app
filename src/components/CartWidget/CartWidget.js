@@ -1,20 +1,20 @@
 import { useContext } from "react";
-import {CgShoppingCart} from "react-icons/cg";
+import { CgShoppingCart } from "react-icons/cg";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
-import './CartWidget.css';
+import "./CartWidget.css";
 
 const CartWidget = () => {
+  const { totalCart, cart } = useContext(CartContext);
 
-    const {totalCart} = useContext(CartContext)
-    
-    return(
-      <Link to={'/cart'} className='cart-widget'>
+  if (cart.length > 0) {
+    return (
+      <Link to={"/cart"} className="cart-widget">
         <CgShoppingCart />
         <p className="cart-counter">{totalCart()}</p>
       </Link>
-    )
-}
+    );
+  }
+};
 
-export default CartWidget
-
+export default CartWidget;

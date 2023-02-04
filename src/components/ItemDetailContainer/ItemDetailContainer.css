@@ -1,7 +1,7 @@
 .item-detail-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
-    background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  background-color: whitesmoke;
 }
