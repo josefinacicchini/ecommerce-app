@@ -20,8 +20,9 @@ It uses Firebase Authentication and Database services.
 [
 pawsomestore.netlify.app](https://pawsomestore.netlify.app/)
 
-user: 'guest@guest.com' 
-pass: 'guestuser'
+user: guest@guest.com
+
+pass: guestuser
 
 ## Authors
 
